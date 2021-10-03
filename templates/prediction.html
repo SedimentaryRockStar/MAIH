@@ -1,0 +1,24 @@
+<head>
+    <style>
+@import url('//fonts.googleapis.com/css2?family=Trocchi&display=swap');
+    </style>
+</head>
+
+{% extends 'base.html' %}
+
+{% block head %}
+<br>
+<title>Mood Tracker</title>
+{% endblock %}
+
+{% block body %}
+<h1 style= "font-family: 'Papyrus', serif; text-align: center">Mood Tracker</h1>
+<hr>
+<p style="font-family:monospace; font-size:15px; line-height:1.5"> It seems like you are feeling {{ prediction }}</p>
+<p style="font-family:monospace; font-size:15px; line-height:1.5"> We added your mood to your mood diary! </p>
+
+
+
+<footer style="font-family:monospace; font-size:13px"> Fall 2021 MAIS Hacks</footer>
+
+{% endblock %}

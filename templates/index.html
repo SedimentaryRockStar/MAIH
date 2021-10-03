@@ -1,0 +1,38 @@
+<head>
+    <style>
+@import url('//fonts.googleapis.com/css2?family=Trocchi&display=swap');
+    </style>
+</head>
+
+{% extends 'base.html' %}
+
+{% block head %}
+<br>
+<title>Mood Tracker</title>
+{% endblock %}
+
+{% block body %}
+<h1 style= "font-family: 'Papyrus', serif; text-align: center">Mood Tracker</h1>
+<hr>
+<p style="font-family:monospace; font-size:15px; line-height:1.5; text-align:center"> Hi! Welcome to our mood tracker app. How was your day?</p>
+
+<!--
+<form style= "text-align:center" method="POST">
+    <textarea rows = "5" cols = "60" >
+    </textarea>
+    <input name="text">
+    <input type="submit">
+</form>
+-->
+<hr>
+<form style= "text-align:center" method = "POST">
+    <textarea rows = "5" cols = "60" name = "text">
+    </textarea>
+    <br>
+    <br>
+    <input type = "submit"/>
+ </form>
+
+<footer style="font-family:monospace; font-size:13px"> Fall 2021 MAIS Hacks</footer>
+
+{% endblock %}
